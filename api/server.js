@@ -1,8 +1,8 @@
 const express = require('express');
 const helmet = require('helmet');
-require('dotenv').config();
-console.log('environment', process.env);
-require('dotenv').config({ debug: process.env.DEBUG });
+
+const secrets = require('../config/secrets.js');
+console.log('environment');
 const apiRouter = require('./api-router.js');
 
 const server = express();
