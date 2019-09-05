@@ -2,7 +2,7 @@ const db = require('../data/db.js');
 
 module.exports = {
   find,
-  add,
+  add
 };
 
 function find() {
